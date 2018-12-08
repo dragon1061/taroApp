@@ -1,0 +1,18 @@
+.index{
+    height: 90%;
+}
+$list-bg:red,orange,blue,skyblue;
+    @for $i from 1 to length($list-bg)+1 {
+        .test-h :nth-child(#{$i}){
+            background-color: nth($list-bg,$i);
+            height: 100%;  
+        }
+    }
+.change_area{
+    top: 10px;
+    float: left;
+}
+AtSearchBar{
+    height: 100%;
+    float: left;
+}
